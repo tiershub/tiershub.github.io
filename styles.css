@@ -1,0 +1,113 @@
+:root {
+    --textacitve: #f1f8ff;
+    --bgcolor: #10151d;
+    --outlinecolour: #1d2735;
+    --boxcolour: #121821;
+    --uboxcolour: #0d1118;
+    --textinactive: #54626a;
+    --boxhover: #263242;
+}
+
+body {
+    background-color: var(--bgcolor);
+    font-family: "Source Code Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.tact {
+    color: var(--textacitve);
+}
+
+.tina {
+    color: var(--textinactive);
+}
+
+.listname {
+    color: var(--textacitve);
+    margin-bottom: 5px;
+}
+
+.listlink {
+    color: var(--textinactive);
+    margin-top: 0;
+}
+
+.home {
+    width: 65%;
+    margin: 0 auto;
+    background: var(--boxcolour);
+    text-align: center;
+    padding: 20px;
+    outline: 1px solid var(--outlinecolour);
+    border-radius: 10px;
+}
+
+.tlist {
+    width: 50%;
+    margin: 0 auto;
+    background: var(--boxcolour);
+    padding: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: 1px solid var(--outlinecolour);
+    border-radius: 10px;
+
+    display: flex;       
+    align-items: center; 
+    gap: 30px;           
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    cursor: pointer;
+}
+
+.leftlist {
+    color: var(--textacitve);
+    margin-left: auto;
+    text-align: right;
+}
+
+.tlist:hover {
+    background-color: var(--boxhover);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.navdiv {
+    width: 90%;
+    margin: 0 auto;
+    background: var(--boxcolour);
+    padding: 10px 20px;
+    outline: 1px solid var(--outlinecolour);
+    border-radius: 10px;
+    color: white;
+    display: flex;       
+    align-items: center; 
+    justify-content: center;
+    gap: 50px; 
+
+}
+
+.utlist {
+    width: 50%;
+    margin: 0 auto;
+    background: var(--uboxcolour);
+    padding: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: 1px solid var(--outlinecolour);
+    border-radius: 10px;
+
+    display: flex;       
+    align-items: center; 
+    gap: 30px;           
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    cursor: not-allowed;
+}
